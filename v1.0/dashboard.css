@@ -1,0 +1,231 @@
+html, body {
+    height: 100%;
+    font-family:      Georgia, "Times New Roman", Times, serif;
+    font-size:        medium;
+    margin:           0px;
+}
+/*---------------------header part-----------------------*/
+header#top_header{
+    background-color: black;
+    margin: 0px;
+    height: 40px;
+
+}
+/*left side*/
+#LOGO{
+    background-color: black;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-align: left;
+    color: red;
+}
+/*right side*/
+#LOGO_table{
+    display: table;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-spacing: 5px;
+}
+#LOGO_white{
+    color: #cccccc;
+}
+#LOGO_row{
+    display: table-row;
+}
+
+.LOGO_cell{
+    display: table-cell;
+}
+#LOGO_message{
+
+    padding: 3px 5px 0px 5px;
+    vertical-align: top;
+}
+#LOGO_email{
+
+    padding: 0px 15px 0px 5px;
+    vertical-align: top;
+}
+#LOGO_person{
+
+    color: aliceblue;
+    width: 40px;
+    text-align: center;
+    font-size: x-small;
+    padding: 0px 5px 0px 5px;
+    vertical-align: top;
+}
+#LOGO_menu{
+
+    padding: 0px 5px 0px 5px;
+    vertical-align: top;
+}
+/*-----------------------navigator part----------------------*/
+#navigator{
+    background-color: #444444;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    margin-bottom:-3000px;
+    padding-bottom:3000px;
+    text-align: left;
+    overflow: hidden;
+    float: left;
+}
+#navi_ul{
+    display: table;
+    margin: 0px;
+
+    list-style-type: none;
+    padding: 0px;
+
+    color: #cccccc;
+}
+
+#none{
+    display: table-row;
+    height: 40px;
+    text-align: right;
+}
+#none_img{
+    margin: 5px;
+}
+#search{
+    display: table-row;
+    height: 40px;
+
+}
+
+#input_search{
+    border: 0px;
+    background: #444444;
+    color: #cccccc;
+    border-bottom: 1px solid #cccccc;
+    margin-left: 10px;
+}
+#resources{
+    display: table;
+    horiz-align: left;
+    width: 200px;
+
+
+}
+
+.resources_row{
+
+    display: table-row;
+    height: 50px;
+
+}
+
+.resources_cell{
+
+    display: table-cell;
+    border-bottom: 1px solid  #cccccc;
+    vertical-align: middle;
+}
+
+.cell_image{
+    width: 40px;
+    text-align: center;
+}
+
+.cell_word{
+    text-align: center;
+    width: 150px;
+}
+
+.cell_res{
+    width: 15px;
+}
+
+#DashBoard{
+    background-color: red;
+}
+/*---------------------------------PANEL part------------------------*/
+#PANEL{
+    margin-left: 200px;
+}
+#PANEL_outline{
+    width: 1050px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #222222;
+
+}
+/*header part*/
+#PANEL_header{
+    height: 55px;
+    border: 1px solid #222222;
+
+}
+
+#PANEL_header_word{
+    line-height: 55px;
+    font-size: xx-large;
+    color: #666666;
+}
+
+#PANEL_header_word2{
+    color: #888888;
+}
+
+#PANEL_header_img{
+    float: right;
+}
+/*navigator part*/
+#PANEL_navigator{
+    width: 1050px;
+    padding: 0px;
+    margin: 0px;
+    height: 25px;
+    line-height: 25px;
+    background-color: rgb(238,238,238);
+    border: 1px solid #222222;
+    color: #555555;
+}
+#PANEL_calendar{
+    width: 300px;
+    float: right;
+    background-color:rgb(231,81,81);
+    color: white;
+}
+
+#PANEL_cal_img{
+    margin-left: 5px;
+}
+/*data table part*/
+#PANEL_data{
+    display: table;
+    border-spacing: 15px;
+}
+#PANEL_data_firstrow{
+    display: table-row;
+}
+
+.firstrow_cell{
+    display: table-cell;
+    width: 250px;
+    height: 150px;
+
+}
+
+#PANEL_VM1{
+    background-color: rgb(39,196,227);
+}
+
+#PANEL_VM2{
+    background-color: rgb(40,183,121);
+}
+
+#PANEL_VM3{
+    background-color: rgb(133,43,153);
+}
+
+#PANEL_VM4{
+    background-color: rgb(255,196,103);
+}
