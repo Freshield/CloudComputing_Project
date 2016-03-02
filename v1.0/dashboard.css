@@ -154,13 +154,13 @@ header#top_header{
     margin: 0px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #222222;
+
 
 }
 /*header part*/
 #PANEL_header{
     height: 55px;
-    border: 1px solid #222222;
+
 
 }
 
@@ -185,7 +185,7 @@ header#top_header{
     height: 25px;
     line-height: 25px;
     background-color: rgb(238,238,238);
-    border: 1px solid #222222;
+
     color: #555555;
 }
 #PANEL_calendar{
@@ -217,7 +217,44 @@ header#top_header{
 #PANEL_VM1{
     background-color: rgb(39,196,227);
 }
+#PANEL_VM1_up{
+    height: 120px;
+}
+#panel_vm1_word{
+    float: right;
+    margin: 10px;
+    margin-top: 30px;
+    text-align: right;
+}
+#panel_vm1_bigword{
+    color: white;
+    font-size: xx-large;
+}
+#panel_vm1_smallword{
+    color: white;
 
+}
+#panel_vm1_name{
+    color: white;
+    font-size: xx-large;
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#PANEL_VM1_down{
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(33,149,201);
+}
+#panel_vm1_downword{
+    color: white;
+    margin-left: 5px;
+}
+#data_right_img{
+    height: 16px;
+    float: right;
+    margin: 7px 5px 5px 5px;
+}
 #PANEL_VM2{
     background-color: rgb(40,183,121);
 }
