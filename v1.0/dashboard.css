@@ -201,8 +201,9 @@ header#top_header{
 /*data table part*/
 #PANEL_data{
     display: table;
-    border-spacing: 15px;
+    border-spacing: 10px;
 }
+/*first row*/
 #PANEL_data_firstrow{
     display: table-row;
 }
@@ -211,46 +212,47 @@ header#top_header{
     display: table-cell;
     width: 250px;
     height: 150px;
+    color: white;
 
 }
 
 #PANEL_VM1{
     background-color: rgb(39,196,227);
 }
-#PANEL_VM1_up{
+#PANEL_VM1_up, .panel_up{
     height: 120px;
 }
-#panel_vm1_word{
+#panel_vm1_word, .panel_word{
     float: right;
     margin: 10px;
     margin-top: 30px;
     text-align: right;
 }
-#panel_vm1_bigword{
-    color: white;
+#panel_vm1_bigword, .panel_bigword{
+
     font-size: xx-large;
 }
-#panel_vm1_smallword{
-    color: white;
+#panel_vm1_smallword, .panel_smallword{
+
 
 }
-#panel_vm1_name{
-    color: white;
+#panel_vm1_name, .panel_name{
+
     font-size: xx-large;
     float: left;
     margin-top: 10px;
     margin-left: 5px;
 }
-#PANEL_VM1_down{
+#PANEL_VM1_down, .panel_down{
     height: 30px;
     line-height: 30px;
     background-color: rgb(33,149,201);
 }
-#panel_vm1_downword{
-    color: white;
+.panel_downword{
+
     margin-left: 5px;
 }
-#data_right_img{
+.data_right_img{
     height: 16px;
     float: right;
     margin: 7px 5px 5px 5px;
@@ -258,11 +260,49 @@ header#top_header{
 #PANEL_VM2{
     background-color: rgb(40,183,121);
 }
+#PANEL_VM2_down{
+    background-color: rgb(23,166,104);
+}
+#panel_vm2_word{
+    color: red;
+}
 
 #PANEL_VM3{
     background-color: rgb(133,43,153);
 }
+#PANEL_VM3_down{
+    background-color: rgb(116,29,136);
+}
 
 #PANEL_VM4{
     background-color: rgb(255,196,103);
+}
+
+#PANEL_VM4_down{
+    background-color: rgb(224,167,74);
+}
+/*chart*/
+#PANEL_chart{
+    display: table;
+    border-spacing: 25px 5px;
+}
+#chart_row{
+    display: table-row;
+}
+.secondrow_cell{
+    display: table-cell;
+    width: 500px;
+    padding: 0px;
+
+    vertical-align: top;
+
+}
+#secondrow_chart1{
+    margin-right: 5px;
+
+}
+#secondrow_chart2{
+
+    margin-left: 20px;
+
 }
