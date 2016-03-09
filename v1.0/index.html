@@ -1,180 +1,258 @@
 <!DOCTYPE html>
 <html>
-<!-------------------head part---------------->
 <head lang="en">
 	<meta charset="UTF-8">
-	<title>VIMMS dashboard</title>
-    <link type="text/css" rel="stylesheet" href="dashboard.css">
+	<title>VIMMS</title>
+	<script type="text/javascript" src="ajax.js"> </script>
+    <style type="text/css">
+        html,body{
+            margin:0px;
+            height: 100%;
+            background-color: black;
+        }
+        body{
+
+            background-repeat: no-repeat;
+            background-image: url("background.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        /*--------------------HEADER PART-----------------------------*/
+        #top_header{
+            height:50px;
+            background:#fff;
+            background:rgba(255, 255, 255, 0) none repeat scroll 0 0 !important;/*瀹炵幇FF鑳屾櫙閫忔槑锛屾枃瀛椾笉閫忔槑*/
+            width:100%;
+            line-height:60px;
+            position:absolute;
+            z-index:99;
+            margin: 0px;
+            padding: 0px;
+        }
+        #LOGO,#LOGIN,#SIGNUP{
+            margin-top: 5px;
+            font-size: medium;
+            font-weight: bold;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            color: #888888;
+            opacity: 0.9;
+            padding: 5px;
+            text-align:center;
+
+        }
+        #LOGO{
+            float: left;
+            line-height: 40px;
+            color: red;
+
+        }
+        #LOGO_white{
+            color: white;
+        }
+        #LOGIN{
+            float: right;
+            margin-right: 40px;
+            line-height: 40px;
+        }
+        #LOGIN:hover{
+            color: white;
+            cursor: pointer;
+        }
+        #SIGNUP{
+            color: white;
+            margin-right: 20px;
+            margin-top: 10px;
+            height: 20px;
+            float: right;
+            border: solid white 3px;
+            border-radius: 10px;
+            line-height: 20px;
+        }
+        #SIGNUP:hover{
+            background-color: white;
+            color: crimson;
+            cursor: pointer;
+        }
+        /*----------------WORD PART-------------------------*/
+        #WORD{
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            width: 800px;
+            margin: 0px 0px 0px -400px;
+            text-align: center;
+
+        }
+        #BIGSLOGEN{
+            color: #fefefe;
+            font-size: xx-large;
+            font-family: Verdana,sans-serif;
+
+        }
+        #LOWSLOGEN{
+            color: rgb(194,245,228);
+            font-family: Verdana,sans-serif;
+            font-size: large;
+        }
+        /*---------------------SIGN IN PLACE------------------*/
+        #SIGNIN{
+            position: absolute;
+            left: 50%;
+            width: 800px;
+            margin: 0px 0px 0px -400px;
+            bottom: 5px;
+            display: inline-table;
+        }
+        #USERNAME,#PASSWORD,#CONNECT{
+            float: left;
+            height: 50px;
+            margin: 0px 20px;
+            font-family: Verdana,sans-serif;
+        }
+        #USERNAME{
+            margin-left: 60px;
+        }
+        #usernametext,#passwordtext{
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid rgba(30,195,214,0.1);
+            background-color: rgba(30,195,214,0.6);
+            font-size: medium;
+            color: white;
+
+        }
+        #usernametext:focus,#passwordtext:focus{
+            outline: none;
+            border: 1px solid rgb(30,195,214);
+        }
+
+        ::-webkit-input-placeholder { /* WebKit browsers */
+            color: rgb(134,159,181);
+            font-size: small;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: rgb(134,159,181);
+            font-size: small;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color: rgb(134,159,181);
+            font-size: small;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10+ */
+            color: rgb(134,159,181);
+            font-size: small;
+        }
+        #CONNECT{
+            height: 44px;
+            width: 200px;
+            border-radius: 5px;
+            background-color: rgb(30,195,214);
+            font-size: medium;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+        }
+        #CONNECT:hover{
+            cursor: pointer;
+            background-color: rgb(26,169,185);
+        }
+    </style>
 </head>
-<!------------------body part----------------->
 <body>
 <!------------------header part--------------->
-    <header id="top_header">
-        <!-- left side-->
-        <span id="LOGO"><span id="LOGO_white">V I</span> M M S</span>
-        <!-- right side-->
-        <div id="LOGO_table">
-            <div id="LOGO_row">
-                <div id="LOGO_message" class="LOGO_cell">
-                    <img src="image/top_mes.png" height="24">
-                </div>
-                <div id="LOGO_email" class="LOGO_cell">
-                    <img src="image/top_email.png" height="24">
-                </div>
-                <div id="LOGO_person" class="LOGO_cell">
-                    <span id="person">YANG YU</span>
-                </div>
-                <div id="LOGO_menu" class="LOGO_cell">
-                    <img src="image/top_menu.png" height="24">
-                </div>
-            </div>
-        </div>
-    </header>
-<!----------------navigator part------------------>
-<div id="navigator">
-    <div id="navi_ul">
-        <!-- menu part-->
-        <div id="none">
-            <img id="none_img" src="image/nav_menu.png" height="24">
-        </div>
-        <!-- search part-->
-        <div id="search">
-            <input type="text" id="input_search" placeholder="Search...">
-            <img src="image/nav_search.png" height="12">
-        </div>
-        <!-- user resources part-->
-        <div id="resources">
-            <div id="DashBoard" class="resources_row">
-                <div class="resources_cell cell_img"><img src="image/nav_home.png" height="24"></div>
-                <div class="resources_cell cell_word">Dashboard</div>
-                <div class="resources_cell cell_res"><</div>
-            </div>
-            <div id="VM1" class="resources_row">
-                <div class="resources_cell cell_img"><img src="image/nav_vm.png" height="24"></div>
-                <div class="resources_cell cell_word">VM1</div>
-                <div class="resources_cell cell_res"><</div>
-            </div>
-            <div id="VM2" class="resources_row">
-                <div class="resources_cell cell_img"><img src="image/nav_vm.png" height="24"></div>
-                <div class="resources_cell cell_word">VM2</div>
-                <div class="resources_cell cell_res"><</div>
-            </div>
-            <div id="VM3" class="resources_row">
-                <div class="resources_cell cell_img"><img src="image/nav_vm.png" height="24"></div>
-                <div class="resources_cell cell_word">VM3</div>
-                <div class="resources_cell cell_res"><</div>
-            </div>
-            <div id="VM4" class="resources_row">
-                <div class="resources_cell cell_img"><img src="image/nav_vm.png" height="24"></div>
-                <div class="resources_cell cell_word">VM4</div>
-                <div class="resources_cell cell_res"><</div>
-            </div>
-
-        </div>
-    </div>
+<header id="top_header">
+    <!-- left side-->
+    <span id="LOGO"><span id="LOGO_white">V I</span> M M S</span>
+    <!-- right side-->
+    <span id="SIGNUP">Sign up</span>
+    <span id="LOGIN">Login</span>
+</header>
+<div id="WORD">
+    <span id="BIGSLOGEN">To Control Your Cloud Upper the Cloud<br></span>
+    <span id="LOWSLOGEN">Monitor and Control remote;<br>on the upper Cloud</span>
 </div>
-<!---------------------------panel part--------------------------->
-<div id="PANEL">
-    <div id="PANEL_outline">
-        <!-- header-->
-        <header id="PANEL_header">
-            <span id="PANEL_header_word">DASHBOARD</span>
-            <span id="PANEL_header_word2">statistics and more</span>
-            <img src="image/panel_config.png" id="PANEL_header_img">
-        </header>
-        <!-- navigator-->
-        <div id="PANEL_navigator">
-            <span id="PANEL_nav_path">
-                <img src="image/panel_home.png" id="PANEL_path_img" height="16">
-                <span id="PANEL_path_word">Home  >  Dashboard</span>
-            </span>
-            <span id="PANEL_calendar">
-                <img src="image/panel_calendar.png" id="PANEL_cal_img" height="16">
-                <span id="PANEL_cal_word">JAN 15th, 2016 - FEB 14th, 2016</span>
-                <img src="image/panel_cal_down.png" id="PANEL_cal_img2" height="16">
-            </span>
-
-        </div>
-        <!-- data table-->
-        <div id="PANEL_data">
-            <div id="PANEL_data_firstrow">
-                <!-- VM1-->
-                <div id="PANEL_VM1" class="firstrow_cell">
-                    <div id="PANEL_VM1_up" class="panel_up">
-                        <img src="image/panel_data_vm.png" id="data_vm1_img">
-                        <span id="panel_vm1_word" class="panel_word">
-                            <span id="panel_vm1_bigword" class="panel_bigword">STATUS</span><br>
-                            <span id="panel_vm1_smallword" class="panel_smallword">Health</span>
-                        </span>
-                        <span id="panel_vm1_name" class="panel_name">VM1</span>
-                    </div>
-                    <div id="PANEL_VM1_down" class="panel_down">
-                        <span id="panel_vm1_downword" class="panel_downword">View more</span>
-                        <img src="image/data_right.png" class="data_right_img">
-                    </div>
-                </div>
-                <!-- VM2-->
-                <div id="PANEL_VM2" class="firstrow_cell">
-                    <div id="PANEL_VM2_up" class="panel_up">
-                        <img src="image/panel_data_vm.png" id="data_vm2_img">
-                        <span id="panel_vm2_word" class="panel_word">
-                            <span id="panel_vm2_bigword" class="panel_bigword">2 ERROR</span><br>
-                            <span id="panel_vm2_smallword" class="panel_smallword">PROBLEM</span>
-                        </span>
-                        <span id="panel_vm2_name" class="panel_name">VM2</span>
-                    </div>
-                    <div id="PANEL_VM2_down" class="panel_down">
-                        <span id="panel_vm2_downword" class="panel_downword">View more</span>
-                        <img src="image/data_right.png" class="data_right_img">
-                    </div>
-                </div>
-                <!-- VM3-->
-                <div id="PANEL_VM3" class="firstrow_cell">
-                    <div id="PANEL_VM3_up" class="panel_up">
-                        <img src="image/panel_data_vm.png" id="data_vm3_img">
-                        <span id="panel_vm3_word" class="panel_word">
-                            <span id="panel_vm3_bigword" class="panel_bigword">STATUS</span><br>
-                            <span id="panel_vm3_smallword" class="panel_smallword">Health</span>
-                        </span>
-                        <span id="panel_vm3_name" class="panel_name">VM3</span>
-                    </div>
-                    <div id="PANEL_VM3_down" class="panel_down">
-                        <span id="panel_vm3_downword" class="panel_downword">View more</span>
-                        <img src="image/data_right.png" class="data_right_img">
-                    </div>
-                </div>
-                <!-- VM4-->
-                <div id="PANEL_VM4" class="firstrow_cell">
-                    <div id="PANEL_VM4_up" class="panel_up">
-                        <img src="image/panel_data_vm.png" id="data_vm4_img">
-                        <span id="panel_vm4_word" class="panel_word">
-                            <span id="panel_vm4_bigword" class="panel_bigword">STATUS</span><br>
-                            <span id="panel_vm4_smallword" class="panel_smallword">Health</span>
-                        </span>
-                        <span id="panel_vm4_name" class="panel_name">VM4</span>
-                    </div>
-                    <div id="PANEL_VM4_down" class="panel_down">
-                        <span id="panel_vm4_downword" class="panel_downword">View more</span>
-                        <img src="image/data_right.png" class="data_right_img">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- chart table-->
-        <div id="PANEL_chart">
-            <div id="chart_row">
-                <div id="secondrow_chart1" class="secondrow_cell">
-                    <img src="image/data_chart.png" width="490">
-                </div>
-                <div id="secondrow_chart2" class="secondrow_cell">
-                    <img src="image/data_chart2.png" width="490">
-                </div>
-            </div>
-        </div>
+<div id="SIGNIN">
+    <div id="USERNAME">
+        <input id="usernametext" type="text" placeholder="UserName"
+        onkeypress="if(event.keyCode==13) {signin();return false;}">
     </div>
-
+    <div id="PASSWORD">
+        <input id="passwordtext" type="password" placeholder="Password"
+        onkeypress="if(event.keyCode==13) {signin();return false;}">
+    </div>
+    <div id="CONNECT" onclick="signin();">To Site</div>
 </div>
+
+<script type="text/javascript">
+
+	var ajaxReq = new AjaxRequest();
+	var xmlhttp;
+
+	function signin(){
+
+        var username = document.getElementById("usernametext").value;
+        var password = document.getElementById("passwordtext").value;
+
+        str = "username=" + username + "&password=" + password;
+
+        CreateXMLHttpRequest();
+        xmlhttp.onreadystatechange = callhandle;
+        //xmlhttp.open("GET","Default.aspx?goback=yes&arg=" + arg,true);
+        xmlhttp.open("POST","/Redirction",true);
+
+        xmlhttp.setRequestHeader("Content-Length",str.length);
+        xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded;");  //鐢≒OST鐨勬椂鍊欎竴瀹氳鏈夎繖鍙�
+
+        xmlhttp.send(str);
+
+
+	}
+	function CreateXMLHttpRequest()
+    {
+        if (window.ActiveXObject)
+         {
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        else if (window.XMLHttpRequest)
+         {
+            xmlhttp = new XMLHttpRequest();
+         }
+    }
+    function callhandle()
+    {
+
+        if (xmlhttp.readyState == 4)
+       {
+            if(xmlhttp.status == 200)
+             {
+            	var jsonstr = xmlhttp.responseText;
+            	var obj = JSON.parse(jsonstr);
+
+                if(obj.value != "error"){
+
+                	window.location.href=obj.value;
+                }else{
+                	alert("Username or Password is not right");
+                }
+            }
+        }
+    }
+
+
+    // Handle the Ajax request
+    function handleRequest() {
+      if (ajaxReq.getReadyState() == 4 && ajaxReq.getStatus() == 200) {
+        // Enable the Add button and clear the status
+        var getter = ajaxReq.ResponseText;
+        if(getter != "error"){
+
+        	window.location.href=getter;
+        }else{
+        	alert("Username or Password is not right");
+        }
+      }
+    }
+</script>
 
 </body>
 </html>
