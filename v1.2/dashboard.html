@@ -255,9 +255,36 @@ function CreateXHR(){
 }
 
 
-
+//---------ajax for getting status task
 var ajaxReq = new AjaxRequest();
-var xmlhttp2;
+var xmlhttp2 = CreateXHR;
+
+CreateXMLHttpRequest();
+var jVM1_name = "";
+var jVM1_status = "";
+var jVM2_name = "";
+var jVM2_status = "";
+var jPM1_name = "";
+var jPM1_status = "";
+var jPM2_name = "";
+var jPM2_status = "";
+
+xmlhttp2.onreadystatechange = function(){
+    if(xmlhttp2.readyState == 4 && xmlhttp2.status == 200){
+        var getedJSON = xmlhttp.responseText;
+        var obj = JSON.parse(getedJSON);
+        jVM1_name = obj.value;
+        alert(jVM1_name);
+
+    }
+}
+
+xmlhttp2.open("GET","/STATUSget",true);
+xmlhttp2.send();
+
+
+
+//---------ajax for the command task
 
 function CMD(value,name){
     var command = value;
