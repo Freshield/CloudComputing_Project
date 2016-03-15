@@ -89,7 +89,7 @@
     <div id="PANEL_outline">
         <!-- --------------------header----------------------------------->
         <header id="PANEL_header">
-            <span id="PANEL_header_word">PM1</span>
+            <span id="PANEL_header_word">VM1</span>
             <span id="PANEL_header_word2">statistics and more</span>
             <img src="image/panel_config.png" id="PANEL_header_img">
         </header>
@@ -97,7 +97,7 @@
         <div id="PANEL_navigator">
             <span id="PANEL_nav_path">
                 <img src="image/panel_home.png" id="PANEL_path_img" height="16">
-                <span id="PANEL_path_word">Home  >  PM1</span>
+                <span id="PANEL_path_word">Home  >  VM1</span>
             </span>
             <span id="PANEL_calendar">
                 <img src="image/panel_calendar.png" id="PANEL_cal_img" height="16">
@@ -206,8 +206,8 @@
             document.getElementById("navname_vm2").innerText = jPM2_name;
             document.getElementById("navname_vm3").innerText = jVM1_name;
             document.getElementById("navname_vm4").innerText = jVM2_name;
-            document.getElementById("PANEL_header_word").innerText = jPM1_name;
-            document.getElementById("PANEL_path_word").innerText = "Home  >  "+jPM1_name;
+            document.getElementById("PANEL_header_word").innerText = jVM1_name;
+            document.getElementById("PANEL_path_word").innerText = "Home  >  "+jVM1_name;
 
             document.getElementById("PANEL_cal_word").innerText = jTime;
 
@@ -227,7 +227,7 @@
     }
 
     //---------------------chart cpu----------------------------------------------------
-    var padding = 30;
+    var padding = 40;
     var head_height = 20;
     var chart1_title = "CPU performance";
     var chart1_subtitle = "%";
@@ -241,10 +241,7 @@
 
     var xmlhttp;
     var receJSON1 = [];
-    var receCpu0 = [];
     var receCpu1 = [];
-    var receCpu2 = [];
-    var receCpu3 = [];
     var receMem1 = [];
     var receNetwork1 = [];
     var receNetworkrx = [];
@@ -255,8 +252,8 @@
 
     var ajaxReq = new AjaxRequest();
     var xmlhttp2;
-    var lineNames=["cpu0","cpu1","cpu2","cpu3"]; //保存系列名称
-    var lineColor=["#F00","#09F","#0F0","#000"];
+    var lineNames=["cpu"]; //保存系列名称
+    var lineColor=["#0F0"];
     var lineNamesm=["Memory"];
     var lineColorm=["#9F79EE"];
     var lineNamesn=["Net tx"];
@@ -265,9 +262,6 @@
     var lineColorrx=["#87CEFA"];
 
     var dataset = [];
-    var dataset1 = [];
-    var dataset2 = [];
-    var dataset3 = [];
     var xMarks = [];
     var datasetm = [];
     var xMarksm = [];
@@ -455,30 +449,6 @@
         .style("stroke",lineColor[0])
         .style("stroke-opacity",0.9);
 
-
-    var path2 = svg.append("path")
-        .attr("d",lineFunction(dataset1))
-        .attr("class","thepath")
-        .style("fill","none")
-        .style("stroke-width",1)
-        .style("stroke",lineColor[1])
-        .style("stroke-opacity",0.9);
-
-    var path3 = svg.append("path")
-        .attr("d",lineFunction(dataset2))
-        .attr("class","thepath")
-        .style("fill","none")
-        .style("stroke-width",1)
-        .style("stroke",lineColor[2])
-        .style("stroke-opacity",0.9);
-
-    var path4 = svg.append("path")
-        .attr("d",lineFunction(dataset3))
-        .attr("class","thepath")
-        .style("fill","none")
-        .style("stroke-width",1)
-        .style("stroke",lineColor[3])
-        .style("stroke-opacity",0.9);
 
     //-----------------------------for cpu chart end-----------------
 
@@ -1030,9 +1000,6 @@
     function getData(){
         var dataNum = 40;
         dataset = [];
-        dataset1 = [];
-        dataset2 = [];
-        dataset3 = [];
         xMarks = [];
         datasetm = [];
         xMarksm = [];
@@ -1044,9 +1011,6 @@
         for(var i = 1;i<dataNum;i++){
             //dataset.push(Math.round(Math.random()*h));
             dataset.push(0);
-            dataset1.push(0);
-            dataset2.push(0);
-            dataset3.push(0);
             xMarks.push("");
             datasetm.push(0);
             xMarksm.push("");
@@ -1064,17 +1028,11 @@
 
         for(var i = 0;i<receAmount;i++){
             dataset.shift();
-            dataset1.shift();
-            dataset2.shift();
-            dataset3.shift();
             datasetm.shift();
             datasetn.shift();
             datasetrx.shift();
             //dataset.push(Math.round(Math.random()*h));
-            dataset.push(receCpu0[i].cpu0);
-            dataset1.push(receCpu1[i].cpu1);
-            dataset2.push(receCpu2[i].cpu2);
-            dataset3.push(receCpu3[i].cpu3);
+            dataset.push(receCpu1[i].cpu1);
             datasetm.push(receMem1[i].mem);
             datasetn.push(receNetwork1[i].network);
             datasetrx.push(receNetworkrx[i].network_rx);
@@ -1147,15 +1105,6 @@
         path//.transition()
             //.duration(1000)
             .attr("d", lineFunction(dataset));
-        path2//.transition()
-            //.duration(1000)
-            .attr("d", lineFunction(dataset1));
-        path3//.transition()
-            //.duration(1000)
-            .attr("d", lineFunction(dataset2));
-        path4//.transition()
-            //.duration(1000)
-            .attr("d", lineFunction(dataset3));
 
 
 
@@ -1319,7 +1268,7 @@
 
      */
 
-    str = "name=worth" + "&timestamp=" + finalTime;
+    str = "name=flask" + "&timestamp=" + finalTime;
 
     CreateXMLHttpRequest();
     xmlhttp2.onreadystatechange = callhandle;
@@ -1346,7 +1295,7 @@
          }
          }*/
 
-        str = "name=worth" + "&timestamp=" + finalTime;
+        str = "name=flask" + "&timestamp=" + finalTime;
 
         CreateXMLHttpRequest();
         xmlhttp2.onreadystatechange = callhandle;
@@ -1403,10 +1352,7 @@
             receNetwork1 = obj.jnetwork1;
             receNetworkrx = obj.jnetwork_rx;
             receMem1 = obj.jmem1;
-            receCpu0 = obj.jcpu0;
             receCpu1 = obj.jcpu1;
-            receCpu2 = obj.jcpu2;
-            receCpu3 = obj.jcpu3;
             receTime1 = obj.jtimestamp1;
             receID1 = obj.jID1;
 
