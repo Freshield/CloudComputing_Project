@@ -37,8 +37,8 @@
       <file leaf-file-name="VM2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VM2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="67" column="100" selection-start-line="67" selection-start-column="100" selection-end-line="67" selection-end-column="100" />
+            <state vertical-scroll-proportion="-7.717949">
+              <caret line="1377" column="5" selection-start-line="1377" selection-start-column="5" selection-end-line="1377" selection-end-column="5" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VM1.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VM1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VM1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="61" column="100" selection-start-line="61" selection-start-column="100" selection-end-line="61" selection-end-column="100" />
+            <state vertical-scroll-proportion="1.7191011">
+              <caret line="1379" column="9" selection-start-line="1379" selection-start-column="9" selection-end-line="1379" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -60,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VM3.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VM3.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VM3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33278146">
-              <caret line="200" column="40" selection-start-line="200" selection-start-column="34" selection-end-line="200" selection-end-column="40" />
+            <state vertical-scroll-proportion="-9.672132">
+              <caret line="1328" column="0" selection-start-line="1328" selection-start-column="0" selection-end-line="1328" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#3;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#3;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -76,8 +76,8 @@
       <file leaf-file-name="VM4.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VM4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3032787">
-              <caret line="1417" column="22" selection-start-line="1417" selection-start-column="16" selection-end-line="1417" selection-end-column="22" />
+            <state vertical-scroll-proportion="-4.102459">
+              <caret line="1425" column="9" selection-start-line="1396" selection-start-column="8" selection-end-line="1425" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#div#4;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#4;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -139,11 +139,11 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/testMulPolyline.html" />
         <option value="$PROJECT_DIR$/dashboard.css" />
-        <option value="$PROJECT_DIR$/VM3.html" />
-        <option value="$PROJECT_DIR$/VM1.html" />
-        <option value="$PROJECT_DIR$/VM2.html" />
         <option value="$PROJECT_DIR$/dashboard.html" />
         <option value="$PROJECT_DIR$/VM4.html" />
+        <option value="$PROJECT_DIR$/VM3.html" />
+        <option value="$PROJECT_DIR$/VM2.html" />
+        <option value="$PROJECT_DIR$/VM1.html" />
       </list>
     </option>
   </component>
@@ -779,28 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VM1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="100" selection-start-line="61" selection-start-column="100" selection-end-line="61" selection-end-column="100" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VM2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="100" selection-start-line="67" selection-start-column="100" selection-end-line="67" selection-end-column="100" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="19.76923">
@@ -814,8 +792,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/VM4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3032787">
-          <caret line="1417" column="22" selection-start-line="1417" selection-start-column="16" selection-end-line="1417" selection-end-column="22" />
+        <state vertical-scroll-proportion="-4.102459">
+          <caret line="1425" column="9" selection-start-line="1396" selection-start-column="8" selection-end-line="1425" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#div#4;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#4;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -831,13 +809,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/VM2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.717949">
+          <caret line="1377" column="5" selection-start-line="1377" selection-start-column="5" selection-end-line="1377" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/VM3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33278146">
-          <caret line="200" column="40" selection-start-line="200" selection-start-column="34" selection-end-line="200" selection-end-column="40" />
+        <state vertical-scroll-proportion="-9.672132">
+          <caret line="1328" column="0" selection-start-line="1328" selection-start-column="0" selection-end-line="1328" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#3;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#3;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VM1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7191011">
+          <caret line="1379" column="9" selection-start-line="1379" selection-start-column="9" selection-end-line="1379" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
