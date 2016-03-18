@@ -354,13 +354,11 @@ xmlhttp3.onreadystatechange = function(){
 
     }
 }
+var vmflag1 = "false";
+var vmflag2 = "false";
+var vmflag3 = "false";
+var vmflag4 = "false";
 
-var vmflag1 = "flase";
-var vmflag2 = "flase";
-var vmflag3 = "flase";
-var vmflag4 = "flase";
-
-var ajaxReq2 = new AjaxRequest();
 var xmlhttp4;
 
 
@@ -378,26 +376,39 @@ setTimeout(function(){
                 var obj = JSON.parse(jsonstr);
 
                 if(obj.vm3 == "finished"){
+
                     document.getElementById("nav_menu_3").onmouseover = function(){
+
                         document.getElementById("nav_submenu_3").style.display = "block";
                     }
-                }else{
+                    vmflag3 = "false";
+                    alert("VM1 flask's control finished");
+                }else if(obj.vm3 == "not_yet"){
                     document.getElementById("nav_menu_3").onmouseover = function(){
                         document.getElementById("nav_submenu_3").style.display = "none";
                     }
+                }else{
+
                 }
 
                 if(obj.vm4 == "finished"){
                     document.getElementById("nav_menu_4").onmouseover = function(){
+
                         document.getElementById("nav_submenu_4").style.display = "block";
                     }
-                }else{
+                    vmflag4 = "false";
+                    alert("VM2 flake's control finished");
+                }else if(obj.vmt == "not_yet"){
                     document.getElementById("nav_menu_4").onmouseover = function(){
                         document.getElementById("nav_submenu_4").style.display = "none";
                     }
+                }else{
+
                 }
             }
         };
+        str = "vm1=" + vmflag1 + "&vm2=" + vmflag2 + "&vm3=" + vmflag3 + "&vm4=" + vmflag4;
+
         //xmlhttp.open("GET","Default.aspx?goback=yes&arg=" + arg,true);
         xmlhttp4.open("POST","/CMDflag",true);
 
@@ -405,13 +416,9 @@ setTimeout(function(){
         xmlhttp4.setRequestHeader("Content-Type","application/x-www-form-urlencoded;");  //鐢≒OST鐨勬椂鍊欎竴瀹氳鏈夎繖鍙�
 
 
-        str = "vm1=" + vmflag1 + "&vm2=" + vmflag2 + "&vm3=" + vmflag3 + "&vm4=" + vmflag4;
-
         xmlhttp4.send(str);
 
     }
-
-
 
 
 
